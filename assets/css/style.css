@@ -1,0 +1,47 @@
+body{
+    background-image: url("assets/images/pinkdust.png");
+    background-color: aqua;
+}
+
+
+
+h1{
+    color: white;
+    background-color: rgb(165, 25, 25);
+    display: inline-block;
+    /* float: left; */
+
+}
+
+#instructions{
+    display: inline-block;
+    float: left;
+    background-color: palegreen;
+    color: white;
+    width: 50%;
+    padding: 1rem;
+}
+
+
+
+#console{
+    display: block;
+    /* float: left;  */
+}
+
+#crystals{
+    margin-left: 1rem 
+}
+
+/* #container{
+    clear: both;
+} */
+
+h3{
+    background-color: tomato;
+}
+
+#score{
+    
+}
+
