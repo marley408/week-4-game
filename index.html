@@ -10,17 +10,18 @@
         integrity="sha256-fNXJFIlca05BIO2Y5zh1xrShK3ME+/lYZ0j+ChxX2DA="
         crossorigin="anonymous"></script>
     <script defer type="text/javascript" src="assets/javascript/game.js"></script>
-    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
     
 </head>
 <body>
     <div id="container">
-        <div>
+        <div id="title">
             <h1>Crystals Collector!</h1>
         </div>
 
         <div id="instructions">
-            <p>You will be given a random number at the start of the game</p>
+            <p>You will be given a random number at the start of the game.</p>
             <br>
             <p>There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>
             <br>
@@ -32,28 +33,36 @@
         </div>
 
         <div id="console">
-            <span id='computerNum'></span>
+            <div>            
+                <span id='computerNum'></span>
+            </div>
 
             <div id="scores">
-                <h3>Wins: <span id="wins"></span></h3>
-                <h3>Losses:<span id="losses"></span></h3>
+                <h3>Wins: <span id="wins">0</span></h3>
+                <h3>Losses: <span id="losses">0</span></h3>
             </div>
         </div>
         
 
         <div id="crystals">
-                <input type="image" class="trigger" id="crystal1" src="assets/images/blue.png" width="100rem" height="100rem" alt="Crystal"  />
+                <a><img type="image" class="trigger" id="crystal1" src="assets/images/blue.png" width="100rem" height="100rem" alt="Crystal"  /></a> 
 
-                <input type="image" class="trigger" id="crystal2" src="assets/images/green.png" width="100rem" height="100rem" alt="Crystal" data-button="greenNum" />
+                <a><img type="image" class="trigger" id="crystal2" src="assets/images/green.png" width="100rem" height="100rem" alt="Crystal" data-button="greenNum" /></a>
 
-                <input type="image" class="trigger" id="crystal3" src="assets/images/red.png" width="100rem" height="100rem" alt="Crystal" data-button="" />
+                <a><img type="image" class="trigger" id="crystal3" src="assets/images/red.png" width="100rem" height="100rem" alt="Crystal" data-button="" /></a> 
 
-                <input type="image" class="trigger" id="crystal4" src="assets/images/yellow.png" width="100rem" height="100rem" alt="Crystal" data-button="" />
+                <a><img type="image" class="trigger" id="crystal4" src="assets/images/yellow.png" width="100rem" height="100rem" alt="Crystal" data-button="" /></a> 
         </div>
 
-        <div><h3>Your total score is:</h3></div>
+        <div id="score-details">
+            <h3>Your total score is:</h3>
 
-        <span id="score"></span>
+            <div><span id="score"></span></div>
+        
+        </div>
+
+
+        
 
     </div>  
 

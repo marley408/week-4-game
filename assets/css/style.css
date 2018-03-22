@@ -1,47 +1,96 @@
+html {
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body{
-    background-image: url("assets/images/pinkdust.png");
-    background-color: aqua;
+    background-image: url("../images/pink dust.png");
+    background-color: black;
+}
+
+#container {
+    padding: 0 25px;
 }
 
 
-
-h1{
+#title{
     color: white;
+    display: flex;
+    margin-bottom: 1rem; 
+}
+
+#title h1 {
     background-color: rgb(165, 25, 25);
-    display: inline-block;
-    /* float: left; */
-
-}
-
-#instructions{
-    display: inline-block;
-    float: left;
-    background-color: palegreen;
-    color: white;
-    width: 50%;
+    margin: 0;
     padding: 1rem;
 }
 
 
+#instructions{
+    background-color: green;
+    color: white;
+    width: 50%;
+    padding: 1rem;
+    margin-bottom: 1rem; 
+    font-size: 1.5rem;
+}
 
-#console{
+#instructions p{
+    margin: 0rem;
+}
+
+
+
+#console div:first-of-type {
+    background-color: green;
+    font-size: 2rem;
+    margin-right: 1rem;
+    padding: 1rem;
+    width: 25%;
+
+}
+
+#computerNum{
     display: block;
-    /* float: left;  */
+}
+
+#scores{
+    background-color: gray;
+    width: 15%;
+    padding: .5rem 1rem;
+
+    /* margin: 1rem; */
+
 }
 
 #crystals{
-    margin-left: 1rem 
+    margin-bottom: 1rem; 
+
 }
 
-/* #container{
-    clear: both;
-} */
+#console {
+    display: flex;
+    margin-bottom: 1rem; 
 
-h3{
-    background-color: tomato;
 }
 
-#score{
+#score-details {
     
+    max-width: 20%;
 }
+
+#score-details h3,
+#score-details div {
+    background-color: tomato;
+    padding: 1rem;
+}
+
+#score {
+    margin-bottom: 2rem;
+    display: inline-block;
+}
+
+
 
